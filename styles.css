@@ -1,0 +1,212 @@
+@font-face {
+  font-family: CalibreLight;
+  src: url("Calibre-Light.otf");
+}
+@font-face {
+  font-family: CalibreBold;
+  src: url("Calibre-Bold.otf");
+}
+
+body {
+ display: flex;
+}
+.main {
+  flex: 1;
+  margin: 0;
+  width: 320px;
+  height: 480px;
+  background-color: #ecf0f1;
+  border-color: #ecf0f1;
+  border-style: solid;
+  border-width: 1px;
+  position: absolute;
+}
+
+#image {
+  position: absolute;
+  width: 320px;
+  height: 480px;
+  left: 0;
+  top: 0;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.active {
+  visibility: visible;
+}
+
+#logo {
+  position: absolute;
+  height: 20px;
+  top: 18px;
+  left: 20px;
+  z-index: 10;
+}
+
+#copy-container {
+  position: absolute;
+  text-transform: uppercase;
+  font-weight: 1000;
+  top: 30px;
+  left: 18px;
+  word-wrap: normal;
+  width: 160px;
+  height: 250px;
+}
+
+#copy-container p {
+  color: white;
+  font-size: 30px;
+  position: relative;
+  line-height: 30px;
+  letter-spacing: 4px;
+  font-family: "CalibreLight";
+  
+}
+
+#cta-container {
+  background-color: white;
+  display: table;
+  text-align: center;
+  bottom: 25px;
+  position: absolute;
+  left: 20px;
+}
+
+#cta-container p {
+  color: black;
+  top: 3px;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 16px;
+  margin: 8px 14px;
+  font-family: "CalibreBold";
+  z-index: 100;
+  left: 1px;
+}
+#cta-container p:hover {
+  color: white;
+}
+
+#cta-container:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+
+/* Select Image */
+
+.button {
+  color: white;
+  font: arial 10px bold;
+  background-color: rgb(87, 0, 128);
+  border-radius: 25px;
+
+}
+
+.input {
+  border: solid 1px grey;
+}
+.options-select {
+  flex: 1;
+  color: black;
+  display: flex;
+  position: static;
+  margin-top: 500px;
+  margin-left: 4px;
+  line-height: 30px;
+  font-family: "CalibreLight";
+}
+
+.images-select-container {
+  flex: 2;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: lightsteelblue;
+  box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
+}
+
+.image-form {
+  flex: 1
+}
+
+#images-display-area {
+  flex: 5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.images-display {
+  flex: 1;
+  max-width: 160px;
+  height: 240px;
+  margin: 3px;
+}
+
+/* Select Copy */
+.copy-select-container {
+  margin-left: 15px;
+  background-color: lightgrey;
+  flex: 1;
+  text-align: center;
+  box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
+}
+
+.copy-form {
+  flex: 1
+}
+
+#copy-display-area {
+  flex: 5;
+  margin: 3px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.copy-display {
+  flex: 1;
+  border: solid 1px grey;
+  margin: 2px;
+  text-align: center;
+  padding-top: 3px;
+  max-width: 160px;
+  font-size: 25px;
+  font-family: "CalibreBold";
+}
+
+/* Select CTA */
+
+.cta-select-container {
+  margin-left: 15px;
+  background-color: lightcyan;
+  flex: 1;
+  text-align: center;
+  box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
+}
+
+.cta-form {
+  flex: 1
+}
+
+#cta-display-area {
+  margin: 3px;
+  flex: 5;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cta-display {
+  flex: 1;
+  border: solid 1px grey;
+  margin: 2px;
+  text-align: center;
+  padding-top: 3px;
+  max-width: 160px;
+  font-size: 25px;
+  font-family: "CalibreBold";
+}

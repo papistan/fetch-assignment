@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dynamic Retargetting</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="http://s0.2mdn.net/ads/studio/Enabler.js"></script>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.19.0_643d6911392a3398cb1607993edabfa7_min.js"></script>
+    
+  </head>
+  <body>
+    
+    <div class="main">
+      <img id="image"></img>
+      <img id="logo"></img>
+        <div id="copy-container">
+            <p id="copy-text"></p>
+        </div>
+        <div id="cta-container">
+          <p id="cta-text"></p>
+        </div>
+    </div>
+    <div class="options-select">
+      
+      <div class="images-select-container">
+      <h2>Select or input new image</h2>
+      <form class="image-form" onSubmit="javascript:createNewImage(imageInput.value); return false" >
+        Add image url: <input class="input" type="text" name="imageInput" value="">
+        <input class="button" type="submit" value="Submit">
+      </form>
+      <div id="images-display-area">
+
+      </div>
+    </div>
+    <div class="copy-select-container">
+      <h2>Select or input new copy</h2>
+      <form class="copy-form" onSubmit="javascript:createNewCopy(copyInput.value); return false" >
+         Add copy: <input class="input" type="text" name="copyInput" value="" >
+          <input class="button" type="submit" value="Submit">
+        </form>
+      <div id="copy-display-area">
+
+      </div>
+    </div>
+
+    <div class="cta-select-container">
+        <h2>Select or input new cta</h2>
+        <form class="cta-form" onSubmit="javascript:createNewCta(ctaInput.value); return false">
+           Add cta: <input class="input" type="text" name="ctaInput" value="">
+            <input class="button" type="submit" value="Submit">
+          </form>
+        <div id="cta-display-area">
+  
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
