@@ -14,4 +14,5 @@ Create a 320x480 rich media banner that is capable of rendering any combination 
 
     $ git clone https://github.com/papistan/fetch-assignment.git
     $ cd fetch-assignment
+    $ open index.html
 
